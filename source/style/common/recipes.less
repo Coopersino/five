@@ -1,0 +1,252 @@
+.recipes {
+  padding: 42px 0;
+  .vertical-gradient(@top-color: #ffffff, @bottom-color: #eaeaea);
+}
+
+.recipes__title {
+  font-size: 1.75rem;
+  margin-bottom: 29px;
+  font-family: 'AvenirNext-Medium';
+  font-weight: 100;
+}
+
+.recipes__top {
+  .clearfix();
+}
+
+.recipes__title {
+  float: left;
+}
+
+.recipes__count {
+  float: right;
+  font-size: 1.125rem;
+  color: red;
+  margin-top: 34px;
+  font-family: 'AvenirNext-Medium';
+  font-weight: 100;
+}
+
+.recipes__items {
+  font-size: 0;
+}
+
+.recipes__item {
+  width: 91.57%;
+  .inlineblock(top);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  margin-left: 4.24%;
+  margin-bottom: 4.82%;
+  .box-shadow( 0px 1px 7px 1px rgb(185, 179, 179));
+
+
+  &:hover {
+  .box-shadow(0px 3px 7px 2px rgb(185, 179, 179));
+
+  }
+  &:hover .recipes__products {
+    background-color: red;
+    color: #FFFFFF;
+  }
+  &:hover .recipes__img  {
+    max-width: none;
+    cursor: pointer;
+  }
+}
+
+.recipes__img-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.recipes__img {
+  max-width: 100%;
+}
+
+.recipes__desc {
+  padding: 10px 10px;
+}
+
+.recipes__price {
+  font-size: 1.5rem;
+  line-height: 80px;
+  position: absolute;
+  right: 20px;
+  top: 159px;
+  width: 80px;
+  height: 80px;
+  background: #46b650;
+  border-radius: 50%;
+  .inlineblock(middle);
+  text-align: center;
+  color: #fff;
+
+  span {
+    font-size: 0.95rem;
+    line-height: 70px;
+    vertical-align: top;
+  }
+
+}
+
+.recipes__text {
+  position: relative;
+  font-size: 0.875rem;
+  color: #b8b8b8;
+  margin: 4.76% 0 2.80% 12.58%;
+  font-family: 'AvenirNext-Regular';
+
+  &:before {
+    content: '';
+    background-image: url(../img/spritePng.png);
+    background-position: -93px -170px;
+    width: 22px;
+    height: 18px;
+    position: absolute;
+    left: -29px;
+  }
+
+  &_satisfying:before {
+    content: '';
+    background-image: url(../img/spritePng.png);
+    background-position: -138px -72px;
+    width: 27px;
+    height: 18px;
+    position: absolute;
+    left: -35px;
+  }
+
+  &_breakfast:before {
+    content: '';
+    background-image: url(../img/spritePng.png);
+    background-position: -210px -72px;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    left: -36px;
+    top: -11px;
+  }
+}
+
+.recipes__name {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0 0 3.92% 2.80%;
+  font-family: 'AvenirNext-DemiBold';
+  font-weight: 100;
+}
+
+.recipes__time {
+  position: relative;
+  font-size: 1.125rem;
+  color: #b8b8b8;
+  margin: 0 0 6.15% 9.79%;
+
+  &:before {
+    content: '';
+    background-image: url(../img/spritePng.png);
+    background-position: -115px -170px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -23px;
+    top: 5px;
+  }
+}
+
+.recipes__products {
+  font-size: 1.125rem;
+  color: red;
+  text-align: center;
+  border-top: 1px solid #f6f7f7;
+  padding: 17px 0;
+}
+
+@media screen and ( max-width: 960px) {
+  .recipes__title {
+    font-size: 2rem;
+    margin: 31px 0 0 19px;
+  }
+
+  .recipes__more {
+    font-size: 1.5rem;
+    margin: 38px 30px 0 0;
+  }
+
+  .recipes__item {
+    width: 92.09%;
+  }
+
+  .recipes__list {
+    margin-left: 0;
+    font-size: 0;
+  }
+
+  .recipes__top {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and ( max-width: 676px) {
+  .recipes__text {
+    font-size: 1.375rem;
+    margin: 6.56% 0 3.80% 9.58%;
+  }
+
+  .recipes__name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 1.92% 2.80%;
+  }
+
+  .recipes__time {
+    font-size: 1.5rem;
+    margin: 0 0 8.15% 8.79%;
+  }
+
+  .recipes__time:before {
+    background-image: url(../img/spritePng.png);
+    background-position: -138px -90px;
+    width: 22px;
+    height: 22px;
+    left: -31px;
+    top: 7px;
+  }
+
+  .recipes__products {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 31px 0;
+  }
+
+  .recipes__img-wrapper {
+    height: 332px;
+  }
+
+  .recipes__text:before {
+    top: 7px;
+  }
+
+  .recipes__text_breakfast:before {
+    top: 0;
+  }
+
+  .recipes__price {
+    font-size: 2.375rem;
+    line-height: 128px;
+    right: 31px;
+    top: 239px;
+    width: 128px;
+    height: 128px;
+    font-weight: 800;
+
+    span {
+      font-size: 1.15rem;
+      line-height: 115px;
+    }
+  }
+}

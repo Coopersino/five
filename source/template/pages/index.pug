@@ -1,0 +1,170 @@
+extends ../main
+
+block title
+    | test-drafts
+
+block content
+    .main-slider
+        .owl-carousel.owl-theme#slider
+            .slider__item
+                .slider__item-top.slider__item-top_chicken
+                    .container
+                        .slider__item-left
+                            .slider__action c 30 июня по 6 июля 2015 года
+                            h2.slider__title Окорочка куриные охлажденные
+                            .slider__desc 1 кг
+                        .slider__item-right
+                            .slider__img-wrapper
+                                img(src="assets/img/pictures/chicken.png" alt="chiken").slider__img
+                .slider__item-bottom
+                    .container
+                        .social
+                            ul.social__items
+                                each item in ['vk', 'ok', 'mail']
+                                    li.social__item
+                                        a(href="#" class="social__link social__link_" + item)
+                                            .social__icon
+                                            span= item
+                        .main-slider__price-wrapper
+                            .main-slider__price 129
+                                span  00
+                            .main-slider__price-old 189
+                                span  50
+                            .main-slider__price-discount - 20%
+
+            .slider__item
+                .slider__item-top.slider__item-top_chicken
+                    .container
+                        .slider__item-left
+                            .slider__action c 30 июня по 6 июля 2015 года
+                            h2.slider__title Окорочка куриные охлажденные
+                            .slider__desc 1 кг
+                        .slider__item-right
+                            .slider__img-wrapper
+                                img(src="assets/img/pictures/chicken.png" alt="chiken").slider__img
+                .slider__item-bottom
+                    .container
+                        .social
+                            ul.social__items
+                                each item in ['vk', 'ok', 'mail']
+                                    li.social__item
+                                        a(href="#" class="social__link social__link_" + item)
+                                            .social__icon
+                                            span= item
+                        .main-slider__price-wrapper
+                            .main-slider__price 129
+                                span  00
+                            .main-slider__price-old 189
+                                span  50
+                            .main-slider__price-discount - 20%
+
+            .slider__item
+                .slider__item-top.slider__item-top_chicken
+                    .container
+                        .slider__item-left
+                            .slider__action c 30 июня по 6 июля 2015 года
+                            h2.slider__title Окорочка куриные охлажденные
+                            .slider__desc 1 кг
+                        .slider__item-right
+                            .slider__img-wrapper
+                                img(src="assets/img/pictures/chicken.png" alt="chiken").slider__img
+                .slider__item-bottom
+                    .container
+                        .social
+                            ul.social__items
+                                each item in ['vk', 'ok', 'mail']
+                                    li.social__item
+                                        a(href="#" class="social__link social__link_" + item)
+                                            .social__icon
+                                            span= item
+                        .main-slider__price-wrapper
+                            .main-slider__price 129
+                                span  00
+                            .main-slider__price-old 189
+                                span  50
+                            .main-slider__price-discount - 20%
+
+    .recipes
+        .container
+            .recipes__top
+                h2.recipes__title Наши рецепты
+                a(href="#").recipes__count 340 рецептов
+            ul.recipes__list.owl-carousel.owl-theme#slide2
+                li.recipes__item
+                    a(href="#").recipes__link
+                        .recipes__img-wrapper
+                            img(src="assets/img/pictures/recept-pic-001_big.jpg" alt="img").recipes__img
+                        .recipes__desc
+                            .recipes__price 160
+                                span  00
+                            .recipes__text вегетарианский, простой
+                            .recipes__name Блинчики с клубникой
+                            .recipes__time 0:40
+                        .recipes__products Подобрать продукты
+
+                li.recipes__item
+                    a(href="#").recipes__link
+                        .recipes__img-wrapper
+                            img(src="assets/img/pictures/recept-pic-002_big.jpg" alt="img").recipes__img
+                        .recipes__desc
+                            .recipes__price 190
+                                span  00
+                            .recipes__text.recipes__text_satisfying сытный, сложный
+                            .recipes__name Говяжий стейк
+                            .recipes__time 0:40
+                        .recipes__products Подобрать продукты
+
+                li.recipes__item
+                    a(href="#").recipes__link
+                        .recipes__img-wrapper
+                            img(src="assets/img/pictures/recept-pic-003_big.jpg" alt="img").recipes__img
+                        .recipes__desc
+                            .recipes__price 230
+                                span  00
+                            .recipes__text.recipes__text_breakfast завтрак, простой
+                            .recipes__name Вафли с медом
+                            .recipes__time 0:40
+                        .recipes__products Подобрать продукты
+
+    .tms
+        .container
+            ul.tms__items.owl-carousel.owl-theme#slide3
+                li.tms__item
+                    .tms__img-wrapper
+                        img(src="assets/img/pictures/fanta-tm.png" alt="logo").tms__img
+
+                li.tms__item
+                    .tms__img-wrapper
+                        img(src="assets/img/pictures/j7-tm.png" alt="logo").tms__img
+
+                li.tms__item
+                    .tms__img-wrapper
+                        img(src="assets/img/pictures/lipton-tm.png" alt="logo").tms__img
+
+                li.tms__item
+                    .tms__img-wrapper
+                        img(src="assets/img/pictures/nestea-tm.png" alt="logo").tms__img
+
+                li.tms__item
+                    .tms__img-wrapper
+                        img(src="assets/img/pictures/fanta-tm.png" alt="logo").tms__img
+
+                li.tms__item
+                    a(href="#").tms__count +456
+
+    .shops
+        .container
+            .shops__info
+                .shops__count 5100
+                    .shops__text магазинов
+
+    .loyalty
+        .container
+            .loyalty__left
+                .loyalty__title Плати меньше
+                .loyalty__text Станьте частью программы лояльности: получите карту Пятерочки в любом магазине сети и покупайте дешевле.
+                a(href="#").loyalty__btn Зарегистрировать карту
+            .loyalty__right
+                .loyalty__card
+                    img(src="assets/img/pictures/card.png" alt="logo").loyalty__card-img
+

@@ -1,0 +1,40 @@
+header.page-header
+    .page-header__top
+        .container
+
+            .page-header__top-left
+                .city-selector
+                    select.city-selector__items
+                        each item in ['Омск', 'Москва', 'Новосибирск', 'Красноярск', 'Владивосток']
+                            option(value="").choose-city__item= item
+
+            nav.menu
+                ul.menu__items.mobile-menu
+                    each item in ['О компании', 'Акции', 'Магазины', 'Новости', 'Товары', 'Напишите нам']
+                        li.menu__item
+                            a(href="#").menu__link= item
+
+
+            .page-header__top-right
+                a(href="tel:8-800-555-55-05").phone 8-800-555-55-05
+    .page-header__bottom
+        .container
+
+            a(href="index.html").logo
+                img(src="assets/img/pictures/5-logo-white.png" alt="logo").logo__img
+                h1.logo__text Пятёрочка
+
+            .user-menu
+                ul.user-menu__items
+                    each item in ['Покупателям', 'Партнерам', 'Карьера']
+                        li.user-menu__item
+                            a(href="#").user-menu__link= item
+
+            .account
+                a(href="javascript:void(0)").icon
+                    .burger
+                        .menui.top-menu
+                        .menui.mid-menu
+                        .menui.bottom-menu
+                .search
+                a(href="#").account__login Войти
